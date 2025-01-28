@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Add Friend</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+
+<body>
+    <h2>You have a new friend</h2>
+
+
+    <h2 th:if="${friends.size() > 0}"
+        th:text="${friends[friends.size() - 1].firstName + ' ' + friends[friends.size() - 1].lastName}"></h2>
+    <p>
+        // <a href="/friendlist">List of friends</a>
+        // <a href="/addform">Add new friend </a>
+    </p>
+
+
+
+</body>
+
+</html>
